@@ -1,0 +1,29 @@
+<mvc:View controllerName="com.app.parkinglotallocation.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page"   class="customBackground">
+        <VBox>
+        <HBox class="header">
+            <Button text="Reservations" class="navButton" />
+            <Button text="About" class="navButton" />
+        </HBox>
+        <VBox class="content">
+            <VBox class="leftPanel">
+                <Text text="Parking Allotment Powered By BTP" class="title" />
+                <Button text="More" class="moreButton" />
+            </VBox>
+            <VBox class="rightPanel textStroke">
+                <Text text="LOGIN" class="sectionTitle" />
+                <Text text="User Name" ></Text>
+                <Input placeholder="User Name" width="180px"  class="inputField"  />
+                <Text text="Password" ></Text>
+                <Input placeholder="Password" width="180px" type="Password" />
+                <HBox >
+                    <Button text="Login" class="loginButton"  type="Unstyled"/>
+                    <Button text="Clear" class="clearButton"  />
+                </HBox>
+            </VBox>
+        </VBox>
+    </VBox>
+    </Page>
+</mvc:View>

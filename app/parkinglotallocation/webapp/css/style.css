@@ -1,0 +1,146 @@
+.customBackground {
+    background-image: url('https://i.postimg.cc/gJTJ9F3r/TRUCK-EV1.jpg'); /* replace with your image path */
+    background-size: cover;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+/* https://t3.ftcdn.net/jpg/07/95/24/62/240_F_795246249_iIdVF75G02WionxLwsbE0EWa1JRk4X9e.jpg */
+
+.header {
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navButton {
+    margin: 10px;
+    color: #a3c2c2;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.leftPanel { 
+    flex: 1;
+    color: #fff;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #E3C7C1;
+    
+  
+}
+
+.moreButton {
+    color: #fcb7a0;
+    
+}
+
+.rightPanel {
+    position: absolute; /* Position the panel absolutely within its parent container */
+    top: 40.80%; /* Adjust the vertical position */
+    right: 8.80%; /* Adjust the horizontal position */
+    width: 350px; /* Set the desired width */
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+   border-image-outset: 100%;
+
+    color: #fff;
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, #12696B, #23CED1, #12696B) 1; /* Gradient stroke effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
+
+    border-radius: 10px; /* Ensures the panel itself has rounded corners */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this */
+    animation: borderAnimation 5s linear infinite; /* Animation for the live stroke effect */
+ 
+}
+@keyframes borderAnimation {
+    0% {
+        border-image: linear-gradient(45deg, #12696B, #23CED1, #12696B) 1;
+    }
+    100% {
+        border-image: linear-gradient(405deg, #12696B, #23CED1, #12696B) 1;
+    }
+}
+
+
+.rightPanel::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Adjust this value to match the border width */
+    left: -5px; /* Adjust this value to match the border width */
+    right: -5px; /* Adjust this value to match the border width */
+    bottom: -5px; /* Adjust this value to match the border width */
+    border-radius: 15px; /* Add a slightly larger radius to match the corners */
+ 
+
+    animation: rotateGradient 5s linear infinite;
+    z-index: -1; /* Place the pseudo-element behind the panel */
+}
+
+.rightPanel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+.sectionTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inputField {
+   
+    margin-bottom: 30px;
+    color: #a3c2c2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buttonPanel {
+    justify-content: space-between;
+}
+
+.loginButton {
+
+    margin-left : 20px;
+    margin-right : 40px;
+    margin-top: 40px;
+    background-color: #a3c2c2;
+    color: #fff;
+    
+}
+
+.textStroke {
+    color: #ffffff; /* Text color */
+    text-shadow: 
+        -1px -1px 0 #bad7d8,  
+        1px -1px 0 #23CED1,  
+        -1px 1px 0 #23CED1,  
+        1px 1px 0 #23CED1; /* Stroke effect with black color */
+}
+.clearButton {
+    margin-left : 20px;
+    margin-right : 40px;
+    margin-top: 40px;
+    position: relative;
+    background-color: #fcb7a0;
+    color: #fff;
+}
